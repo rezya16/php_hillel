@@ -1,0 +1,29 @@
+<!--Вам необходимо написать три маленьких приложения с применением форм, сессий и подключений файлов:
+1) Разаработать форму для калькулятора. На форме должны присутствовать следующие поля:
+Выпадающий список выполняемой операции
+Поле ввода первого числа
+Поле ввода второго числа
+Кнопка
+Результат калькулятора можно будет выводить после формы, в общем как вам угодно.
+Так же вы можете разбить приложение на два файла 1) Файл с формой, 2) Файл с обработчиком на PHP.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="Calculator.php" method="get">
+    <select name="operation">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" name="arg1"/>
+    <input type="text" name="arg2"/>
+    <button type="submit">Вычислить</button>
+</form>
+</body>
+</html>
+

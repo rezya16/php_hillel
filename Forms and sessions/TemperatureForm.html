@@ -1,0 +1,22 @@
+<!--2) Разработать форму для перевода фаренгейтов в цельсии и на оборот. На форме должны присутсвовать:
+Выпадающий список в какие единицы надо перевести температуру
+Поле ввода температуры
+Кнопка
+Так же вы можете разбить приложение на два файла 1) Файл с формой, 2) Файл с обработчиком на PHP.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="Temperature.php" method="get">
+    <select name="type">
+        <option value="C">Цельсий</option>
+        <option value="F">Фаренгейт</option>
+    </select>
+    <input type="text" name="temp"/>
+    <button type="submit">Перевести</button>
+</form>
+</body>
+</html>
